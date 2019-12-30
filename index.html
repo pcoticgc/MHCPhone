@@ -26,10 +26,6 @@
         <a-assets>
 		   <!-- 01 Video ploma de Ebre -->		   
 		   <a-video id="plomaEbre" source src="video/plomaDeEbre.mp4" type="video/mp4" preload="auto" ></a-video>
-		   <!--02 3D model decaiment-->
-           <a-asset-item id="sentinelDeca-obj" src="models/sentinelDeca.obj"></a-asset-item>
-           <a-asset-item id="sentinelDeca-mtl" src="models/sentinelDeca.mtl"></a-asset-item>
-           <a-mixin id="propertiesSD" scale=".2 .2 .2" position ="0 0 0" rotation="0 0 0"></a-mixin>
 		   <!--03 3D model foc sentinel-->
 		   <a-asset-item id="focSentinel-obj" src="models/focSentinel.obj"></a-asset-item>
            <a-asset-item id="focSentinel-mtl" src="models/focSentinel.mtl"></a-asset-item>
@@ -41,11 +37,11 @@
 		   <!--05 3D model evolucio multitemporal-->
 		   <a-asset-item id="deltaMulti-obj" src="models/deltaMulti_02.obj"></a-asset-item>
            <a-asset-item id="deltaMulti-mtl" src="models/deltaMulti_02.mtl"></a-asset-item>
-           <a-mixin id="propertiesMul" scale=".1 .1 .1" position ="0 0 0" rotation="0 0 0"></a-mixin>
+           <a-mixin id="propertiesMul" scale=".2 .2 .2" position ="0 0 0" rotation="0 0 0"></a-mixin>
            <!--06 3D model humitat del sòl-->
 		   <a-asset-item id="humitat-obj" src="models/humitat_01.obj"></a-asset-item>
            <a-asset-item id="humitat-mtl" src="models/humitat_01.mtl"></a-asset-item>
-           <a-mixin id="propertiesHu" scale=".1 .1 .1" position ="0 0 0" rotation="0 0 0"></a-mixin>
+           <a-mixin id="propertiesHu" scale=".2 .2 .2" position ="0 0 0" rotation="0 0 0"></a-mixin>
 		   <!--07 3D model badalona termosolar-->
 		   <a-asset-item id="badalona-obj" src="models/badalona.obj"></a-asset-item>
            <a-asset-item id="badalona-mtl" src="models/badalona.mtl"></a-asset-item>
@@ -54,11 +50,7 @@
            <a-asset-item id="llum-obj" src="models/Llum_01.obj"></a-asset-item>
            <a-asset-item id="llum-mtl" src="models/Llum_01.mtl"></a-asset-item>
            <a-mixin id="propertiesLlum" scale=".4 .4 .4" position ="0 0 0" rotation="0 0 0"></a-mixin>
-		   <!--09 3D model illa de calor-->
-		   <a-asset-item id="illaC-obj" src="models/illaC_01.obj"></a-asset-item>
-           <a-asset-item id="illaC-mtl" src="models/illaC_01.mtl"></a-asset-item>
-           <a-mixin id="propertiesIllaC" scale=".4 .4 .4" position ="0 0 0" rotation="0 0 0"></a-mixin>
-		    <!--10 3D model barcelona_3d-->
+		   <!--10 3D model barcelona_3d-->
 		   <a-asset-item id="barcelona-obj" src="models/barcelona_3D_014.obj"></a-asset-item>
            <a-asset-item id="barcelona-mtl" src="models/barcelona_3D_014.mtl"></a-asset-item>
            <a-mixin id="propertiesCity_3D" scale=".25 .25 .25" position ="0 -0.5 0" rotation="0 0 0"></a-mixin>
@@ -76,14 +68,32 @@
            <a-mixin id="propertiesVerdU" scale=".2 .2 .2" position ="0 -0.5 0" rotation="0 0 0"></a-mixin>
 		   <!--14 Video comparador litoral-->	   
 		   <a-video id="comparadorLitoral" source src="video/ecosistemaLitoral.mp4" type="video/mp4" preload="auto" ></a-video>
+		   
+		   
+		   <!-- 01 Video Ebre 53 anys -->
+		   <a-video id="plomaEbre" source src="video/deltaEbre_53_anys.mp4" type="video/mp4" preload="auto" ></a-video>
+           <!--02 3D model decaiment-->
+           <a-asset-item id="sentinelDeca-obj" src="models/sentinelDeca.obj"></a-asset-item>
+           <a-asset-item id="sentinelDeca-mtl" src="models/sentinelDeca.mtl"></a-asset-item>
+           <a-mixin id="propertiesSD" scale=".2 .2 .2" position ="0 0 0" rotation="0 0 0"></a-mixin>
+		   <!--09 3D model illa de calor-->
+		   <a-asset-item id="illaC-obj" src="models/illaC_01.obj"></a-asset-item>
+           <a-asset-item id="illaC-mtl" src="models/illaC_01.mtl"></a-asset-item>
+           <a-mixin id="propertiesIllaC" scale=".4 .4 .4" position ="0 0 0" rotation="0 0 0"></a-mixin>
+		   <!--04 3D model girona 3D-->
+		   <a-asset-item id="girona-obj" src="models/untitled.obj"></a-asset-item>
+           <a-asset-item id="girona-mtl" src="models/untitled.mtl"></a-asset-item>
+           <a-mixin id="propertiesSal" scale=".02 .02 .02" position ="0 0 0" rotation="0 -90 0"></a-mixin>
+		   <!--05 3D model castellfollit-->
+		   <a-asset-item id="deltaMulti-obj" src="models/castellFollit_02.obj"></a-asset-item>
+           <a-asset-item id="deltaMulti-mtl" src="models/castellFollit_02.mtl"></a-asset-item>
+           <a-mixin id="propertiesMul" scale=".1 .1 .1" position ="0 0 0" rotation="80 180 0"></a-mixin>  
+		   
+		   
         </a-assets>
         <!--01 Video ploma de Ebre-->
         <a-marker type="pattern" preset="custom" url="data/pattern-markerPlomaEbre.patt">
   		   <a-entity geometry="primitive: plane" scale="6 4 1" position="0 0 0" rotation="-90 0 0" material="src: #plomaEbre"></a-entity>
-		</a-marker>
-		<!--02 3D model decaiment-->
-		<a-marker type="pattern" preset="custom" url="data/pattern-markerDe.patt">
-  		   <a-entity mixin="propertiesSD" obj-model="obj: #sentinelDeca-obj; mtl: #sentinelDeca-mtl "></a-entity>
 		</a-marker>
 		<!--03 3D model foc sentinel-->
 		<a-marker type="pattern" preset="custom" url="data/pattern-markerFoc.patt">
@@ -109,10 +119,6 @@
         <a-marker type="pattern" preset="custom" url="data/pattern-markerLlumC.patt">
   		   <a-entity mixin="propertiesLlum" obj-model="obj: #llum-obj; mtl: #llum-mtl "></a-entity>
 		</a-marker>
-		<!--09 3D model illa de calor-->
-		<a-marker type="pattern" preset="custom" url="data/pattern-markerIllaCaUr.patt">
-  		   <a-entity mixin="propertiesIllaC" obj-model="obj: #illaC-obj; mtl: #illaC-mtl "></a-entity>
-		</a-marker>
 		<!--10 3D model barcelona_3d -->
 		<a-marker type="pattern" preset="custom" url="data/pattern-markerCity_3D.patt">
   		   <a-entity mixin="propertiesCity_3D" obj-model="obj: #barcelona-obj; mtl: #barcelona-mtl "></a-entity>
@@ -133,6 +139,33 @@
         <a-marker type="pattern" preset="custom" url="data/pattern-markerLiroralCat.patt">
   		   <a-entity geometry="primitive: plane" scale="6 4 1" position="0 0 0" rotation="-90 0 0" material="src: #comparadorLitoral"></a-entity>
 		</a-marker>
+		
+		
+		
+		 <<!-- 01 Video Ebre 53 anys -->
+        <a-marker type="pattern" preset="custom" url="data/pattern-markerDeltaEbre.patt">
+  		  <a-entity geometry="primitive: plane" scale="6 4 1" position="0 0 0" rotation="200 0 180" material="src: #plomaEbre"></a-entity>
+		</a-marker>
+		<!--02 3D model decaiment-->
+		<a-marker type="pattern" preset="custom" url="data/pattern-markerDe.patt">
+  		   <a-entity mixin="propertiesSD" obj-model="obj: #sentinelDeca-obj; mtl: #sentinelDeca-mtl "></a-entity>
+		</a-marker>
+		<!--09 3D model illa de calor-->
+		<a-marker type="pattern" preset="custom" url="data/pattern-markerIllaCaUr.patt">
+  		   <a-entity mixin="propertiesIllaC" obj-model="obj: #illaC-obj; mtl: #illaC-mtl "></a-entity>
+		</a-marker>
+		<!--04 3D model girona 3D-->
+		<a-marker type="pattern" preset="custom" url="data/pattern-girona.patt">
+  		   <a-entity mixin="propertiesSal" obj-model="obj: #girona-obj; mtl: #girona-mtl "></a-entity>
+		</a-marker>
+		 <!--05 3D model castellfollit-->
+		<a-marker type="pattern" preset="custom" url="data/pattern-castellFollit.patt">
+  		   <a-entity mixin="propertiesMul" obj-model="obj: #deltaMulti-obj; mtl: #deltaMulti-mtl "></a-entity>
+		</a-marker>
+		
+		
+		
+		
   	    <a-entity camera></a-entity>
 	</a-scene>
 
