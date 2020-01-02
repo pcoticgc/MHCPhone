@@ -71,7 +71,7 @@
 		   
 		   
 		   <!-- 01 Video Ebre 53 anys -->
-		   <a-video id="plomaEbre" source src="video/deltaEbre_53_anys.mp4" type="video/mp4" preload="auto" ></a-video>
+		   <a-video id="pEbre" source src="video/deltaEbre_53_anys.mp4" type="video/mp4" preload="auto" ></a-video>
            <!--02 3D model decaiment-->
            <a-asset-item id="sentinelDeca-obj" src="models/sentinelDeca.obj"></a-asset-item>
            <a-asset-item id="sentinelDeca-mtl" src="models/sentinelDeca.mtl"></a-asset-item>
@@ -81,13 +81,13 @@
            <a-asset-item id="illaC-mtl" src="models/illaC_01.mtl"></a-asset-item>
            <a-mixin id="propertiesIllaC" scale=".4 .4 .4" position ="0 0 0" rotation="0 0 0"></a-mixin>
 		   <!--04 3D model girona 3D-->
-		   <a-asset-item id="girona-obj" src="models/untitled.obj"></a-asset-item>
-           <a-asset-item id="girona-mtl" src="models/untitled.mtl"></a-asset-item>
-           <a-mixin id="propertiesSal" scale=".02 .02 .02" position ="0 0 0" rotation="0 -90 0"></a-mixin>
+		   <a-asset-item id="girona-obj" src="models/girona_D.obj"></a-asset-item>
+           <a-asset-item id="girona-mtl" src="models/girona_D.mtl"></a-asset-item>
+           <a-mixin id="propertiesGir" scale=".01 .01 .01" position ="0 0 0" rotation="0 -90 0"></a-mixin>
 		   <!--05 3D model castellfollit-->
-		   <a-asset-item id="deltaMulti-obj" src="models/castellFollit_02.obj"></a-asset-item>
-           <a-asset-item id="deltaMulti-mtl" src="models/castellFollit_02.mtl"></a-asset-item>
-           <a-mixin id="propertiesMul" scale=".1 .1 .1" position ="0 0 0" rotation="80 180 0"></a-mixin>  
+		   <a-asset-item id="castellFollit-obj" src="models/castellFollit_02.obj"></a-asset-item>
+           <a-asset-item id="castellFollit-mtl" src="models/castellFollit_02.mtl"></a-asset-item>
+           <a-mixin id="propertiesCastellF" scale=".1 .1 .1" position ="0 0 0" rotation="0 0 0"></a-mixin>  
 		   
 		   
         </a-assets>
@@ -144,7 +144,7 @@
 		
 		 <<!-- 01 Video Ebre 53 anys -->
         <a-marker type="pattern" preset="custom" url="data/pattern-markerDeltaEbre.patt">
-  		  <a-entity geometry="primitive: plane" scale="6 4 1" position="0 0 0" rotation="200 0 180" material="src: #plomaEbre"></a-entity>
+  		  <a-entity geometry="primitive: plane" scale="6 4 1" position="0 0 0" rotation="200 0 180" material="src: #pEbre"></a-entity>
 		</a-marker>
 		<!--02 3D model decaiment-->
 		<a-marker type="pattern" preset="custom" url="data/pattern-markerDe.patt">
@@ -156,11 +156,11 @@
 		</a-marker>
 		<!--04 3D model girona 3D-->
 		<a-marker type="pattern" preset="custom" url="data/pattern-girona.patt">
-  		   <a-entity mixin="propertiesSal" obj-model="obj: #girona-obj; mtl: #girona-mtl "></a-entity>
+  		   <a-entity mixin="propertiesGir" obj-model="obj: #girona-obj; mtl: #girona-mtl "></a-entity>
 		</a-marker>
 		 <!--05 3D model castellfollit-->
 		<a-marker type="pattern" preset="custom" url="data/pattern-castellFollit.patt">
-  		   <a-entity mixin="propertiesMul" obj-model="obj: #deltaMulti-obj; mtl: #deltaMulti-mtl "></a-entity>
+  		   <a-entity mixin="propertiesCastellF" obj-model="obj: #castellFollit-obj; mtl: #castellFollit-mtl "></a-entity>
 		</a-marker>
 		
 		
