@@ -51,8 +51,8 @@
            <a-asset-item id="llum-mtl" src="models/Llum_01.mtl"></a-asset-item>
            <a-mixin id="propertiesLlum" scale=".4 .4 .4" position ="0 0 0" rotation="0 0 0"></a-mixin>
 		   <!--10 3D model barcelona_3d-->
-		   <a-asset-item id="barcelona-obj" src="models/barcelona_3D_014.obj"></a-asset-item>
-           <a-asset-item id="barcelona-mtl" src="models/barcelona_3D_014.mtl"></a-asset-item>
+		   <a-asset-item id="barcelona-obj" src="models/barcelona_3D_08_01_2020.obj"></a-asset-item>
+           <a-asset-item id="barcelona-mtl" src="models/barcelona_3D_08_01_2020.mtl"></a-asset-item>
            <a-mixin id="propertiesCity_3D" scale=".25 .25 .25" position ="0 -0.5 0" rotation="0 0 0"></a-mixin>
 		   <!--11 3D model futur Agrari -->
 		   <a-asset-item id="futurAgra-obj" src="models/futurAgra_03.obj"></a-asset-item>
@@ -80,11 +80,11 @@
 		   <a-asset-item id="illaC-obj" src="models/illaC_01.obj"></a-asset-item>
            <a-asset-item id="illaC-mtl" src="models/illaC_01.mtl"></a-asset-item>
            <a-mixin id="propertiesIllaC" scale=".4 .4 .4" position ="0 0 0" rotation="0 0 0"></a-mixin>
-		   <!--04 3D model girona 3D-->
-		   <a-asset-item id="girona-obj" src="models/girona_D.obj"></a-asset-item>
-           <a-asset-item id="girona-mtl" src="models/girona_D.mtl"></a-asset-item>
+		   <!--04 3D model girona 3D -->
+		   <a-asset-item id="girona-obj" src="models/girona_3D.obj"></a-asset-item>
+           <a-asset-item id="girona-mtl" src="models/girona_3D.mtl"></a-asset-item>
            <a-mixin id="propertiesGir" scale=".01 .01 .01" position ="0 0 0" rotation="0 -90 0"></a-mixin>
-		   <!--05 3D model castellfollit-->
+		   <!--05 3D model castellfollit -->
 		   <a-asset-item id="castellFollit-obj" src="models/castellFollit_02.obj"></a-asset-item>
            <a-asset-item id="castellFollit-mtl" src="models/castellFollit_02.mtl"></a-asset-item>
            <a-mixin id="propertiesCastellF" scale=".1 .1 .1" position ="0 0 0" rotation="0 0 0"></a-mixin>  
@@ -144,7 +144,7 @@
 		
 		 <<!-- 01 Video Ebre 53 anys -->
         <a-marker type="pattern" preset="custom" url="data/pattern-markerDeltaEbre.patt">
-  		  <a-entity geometry="primitive: plane" scale="6 4 1" position="0 0 0" rotation="200 0 180" material="src: #pEbre"></a-entity>
+  		  <a-entity geometry="primitive: plane" scale="6 4 1" position="0 0 0" rotation="-90 0 0" material="src: #pEbre"></a-entity>
 		</a-marker>
 		<!--02 3D model decaiment-->
 		<a-marker type="pattern" preset="custom" url="data/pattern-markerDe.patt">
@@ -154,7 +154,7 @@
 		<a-marker type="pattern" preset="custom" url="data/pattern-markerIllaCaUr.patt">
   		   <a-entity mixin="propertiesIllaC" obj-model="obj: #illaC-obj; mtl: #illaC-mtl "></a-entity>
 		</a-marker>
-		<!--04 3D model girona 3D-->
+		<!--04 3D model girona 3D -->
 		<a-marker type="pattern" preset="custom" url="data/pattern-girona.patt">
   		   <a-entity mixin="propertiesGir" obj-model="obj: #girona-obj; mtl: #girona-mtl "></a-entity>
 		</a-marker>
